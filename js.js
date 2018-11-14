@@ -24,6 +24,8 @@ function getTextValue() {
     inputValue = $(input).val();
 }
 
+// Here we look for the value of the text, and if it matches with any of the colors 
+// stored in the array color[] then it changes the color of the text too.
 function changeColor() {
     for (i = 0; i < color.length; i++) {
         if (inputValue.toLowerCase() == color[i]) {
